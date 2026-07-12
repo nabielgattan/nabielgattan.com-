@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Creative Visual Artist</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Karantina:wght@300;400;700&display=swap" rel="stylesheet">
+    
+    <style>
+        body { font-family: 'Montserrat', sans-serif; background-color: #0a0a0a; color: #e5e5e5; }
+        h1, h2, h3 { font-family: 'Playfair Display', serif; }
+        .gold-accent { color: #c5a059; }
+        .bg-gold { background-color: #c5a059; }
+        .border-gold { border-color: #c5a059; }
+        .skill-card:hover { transform: translateY(-5px); transition: all 0.3s ease; }
+        .progress-bar { transition: width 1.5s ease-in-out; }
+        .modal { display: none !important; position: fixed; z-index: 1000; left: 0; top: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.9); }
+        
+        /* Nav link active style */
+        .nav-link.active { color: #c5a059; font-weight: 600; border-bottom: 2px solid #c5a059; }
+    </style>
+</head>
+<body class="bg-[#0a0a0a] relative">
+
+<nav class="fixed w-full z-50 bg-[#0a0a0a]/80 backdrop-blur-md border-b border-white/10">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+        <a href="#home" class="flex items-center gap-3">
+            <img src="NG Logo.png" alt="Logo NG" class="h-8 w-8 object-contain">
+            <div class="text-3xl gold-accent tracking-widest" style="font-family: 'Karantina', cursive; line-height: 1;">
+            NG Project
+            </div>
+        </a>
+
+        <div class="space-x-8 hidden md:flex text-sm uppercase tracking-widest">
+            <a href="#home" class="nav-link hover:text-[#c5a059] transition pb-1">Home</a>
+            <a href="#skills" class="nav-link hover:text-[#c5a059] transition pb-1">Skills</a>
+            <a href="#portfolio" class="nav-link hover:text-[#c5a059] transition pb-1">Portfolio</a>
+            <a href="#contact" class="nav-link hover:text-[#c5a059] transition pb-1">Contact</a>
+        </div>
+    </div>
+</nav>
+
+    <section id="home" class="min-h-screen flex flex-col justify-center items-center text-center px-6 pt-20">
+        <div class="w-40 h-40 rounded-full border-2 border-gold mb-8 overflow-hidden">
+            <img src="Profile.jpg" alt="Profile" class="w-full h-full object-cover">
+        </div>
+        <h1 class="text-5xl md:text-7xl mb-4">Halo, saya <span class="gold-accent">Nabiel Gattan</span></h1>
+        <p class="max-w-2xl text-lg text-gray-400 leading-relaxed mb-8">
+            Seorang kreator visual yang hobi mengubah ide abstrak menjadi karya nyata. Dari bidikan lensa kamera hingga dunia visual, saya menggabungkan teknik dan estetika untuk menciptakan cerita yang berkesan.
+        </p>
+        <div class="flex space-x-6 text-2xl">
+            <a href="https://www.instagram.com/nabiel_gattan/" target="_blank" class="hover:text-[#c5a059] transition"><i class="fab fa-instagram"></i></a>
+            <a href="https://wa.me/6281282045808" target="_blank" class="hover:text-[#c5a059] transition"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://www.tiktok.com/@nblgttn" target="_blank" class="hover:text-[#c5a059] transition"><i class="fab fa-tiktok"></i></a>
+            <a href="https://www.youtube.com/@nabielgattan" target="_blank" class="hover:text-[#c5a059] transition"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.facebook.com/nabiel.gattan" target="_blank" class="hover:text-[#c5a059] transition"><i class="fab fa-facebook"></i></a>
+        </div>
+    </section>
+
+    <section id="skills" class="py-24 bg-[#0f0f0f]">
+        <div class="max-w-6xl mx-auto px-6">
+            <h2 class="text-4xl mb-16 text-center italic">Software <span class="gold-accent">&</span> Mastery</h2>
+            
+            <div class="grid grid-cols-2 md:grid-cols-6 gap-8 mb-20 text-center">
+                <div class="skill-card p-6 border border-white/5 rounded-xl bg-white/5 flex flex-col items-center gap-4">
+                    <img src="Ae.png" alt="Adobe After Effects" class="w-12 h-12 object-contain">
+                    <p class="font-semibold">Adobe After Effects</p>
+                </div>
+
+                <div class="skill-card p-6 border border-white/5 rounded-xl bg-white/5 flex flex-col items-center gap-4">
+                    <img src="Ai.png" alt="Illustrator" class="w-12 h-12 object-contain">
+                    <p class="font-semibold">Adobe Illustrator</p>
+                </div>
+
+                <div class="skill-card p-6 border border-white/5 rounded-xl bg-white/5 flex flex-col items-center gap-4">
+                    <img src="Canva.svg" alt="Canva" class="w-12 h-12 object-contain">
+                    <p class="font-semibold">Canva</p>
+                </div>
+
+                <div class="skill-card p-6 border border-white/5 rounded-xl bg-white/5 flex flex-col items-center gap-4">
+                    <img src="Capcut.png" alt="Capcut" class="w-12 h-12 object-contain">
+                    <p class="font-semibold">Capcut</p>
+                </div>
+
+                <div class="skill-card p-6 border border-white/5 rounded-xl bg-white/5 flex flex-col items-center gap-4">
+                    <img src="Blender.png" alt="3D Blender" class="w-12 h-12 object-contain">
+                    <p class="font-semibold">3D Blender</p>
+                </div>
+
+                <div class="skill-card p-6 border border-white/5 rounded-xl bg-white/5 flex flex-col items-center gap-4">
+                    <img src="Unitylogoo.png" alt="Unity" class="w-12 h-12 object-contain">
+                    <p class="font-semibold">Unity</p>
+                </div>
+            </div>
+
+            <div class="max-w-3xl mx-auto space-y-8">
+                <div>
+                    <div class="flex justify-between mb-2"><span>Fotografi</span><span>80%</span></div>
+                    <div class="w-full bg-white/10 h-2 rounded-full"><div class="bg-gold h-2 rounded-full" style="width: 80%"></div></div>
+                </div>
+                <div>
+                    <div class="flex justify-between mb-2"><span>Videografi</span><span>80%</span></div>
+                    <div class="w-full bg-white/10 h-2 rounded-full"><div class="bg-gold h-2 rounded-full" style="width: 80%"></div></div>
+                </div>
+                <div>
+                    <div class="flex justify-between mb-2"><span>Content Creator</span><span>75%</span></div>
+                    <div class="w-full bg-white/10 h-2 rounded-full"><div class="bg-gold h-2 rounded-full" style="width: 75%"></div></div>
+                </div>
+                <div>
+                    <div class="flex justify-between mb-2"><span>Desain Grafis</span><span>70%</span></div>
+                    <div class="w-full bg-white/10 h-2 rounded-full"><div class="bg-gold h-2 rounded-full" style="width: 70%"></div></div>
+                </div>
+                <div>
+                    <div class="flex justify-between mb-2"><span>3D Modelling</span><span>75%</span></div>
+                    <div class="w-full bg-white/10 h-2 rounded-full"><div class="bg-gold h-2 rounded-full" style="width: 75%"></div></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="py-24 px-6">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-4xl mb-12 text-center">Featured <span class="gold-accent">Works</span></h2>
+            
+            <div class="flex flex-wrap justify-center gap-4 mb-12">
+                <button onclick="filterSelection('all', this)" class="filter-btn px-6 py-2 border border-white/20 text-gray-400 hover:border-gold transition uppercase text-xs tracking-widest">All</button>
+                <button onclick="filterSelection('foto', this)" class="filter-btn px-6 py-2 border border-white/20 text-gray-400 hover:border-gold transition uppercase text-xs tracking-widest">Fotografi</button>
+                <button onclick="filterSelection('video', this)" class="filter-btn px-6 py-2 border border-white/20 text-gray-400 hover:border-gold transition uppercase text-xs tracking-widest">Videografi</button>
+                <button onclick="filterSelection('animation', this)" class="filter-btn px-6 py-2 border border-white/20 text-gray-400 hover:border-gold transition uppercase text-xs tracking-widest">Animation</button>
+                <button onclick="filterSelection('game', this)" class="filter-btn px-6 py-2 border border-white/20 text-gray-400 hover:border-gold transition uppercase text-xs tracking-widest">Software Design</button>
+                <button onclick="filterSelection('grafis', this)" class="filter-btn px-6 py-2 border border-white/20 text-gray-400 hover:border-gold transition uppercase text-xs tracking-widest">Desain Grafis</button>
+                <button onclick="filterSelection('modelling', this)" class="filter-btn px-6 py-2 border border-white/20 text-gray-400 hover:border-gold transition uppercase text-xs tracking-widest">3D Modelling</button>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6" id="portfolioGrid">
+                <div class="portfolio-item foto group relative overflow-hidden bg-black aspect-square cursor-pointer"
+                 onclick="window.open('https://drive.google.com/drive/folders/1sTSXp0-ZBzZJuJhhAGUUzJd8nNYsc0V3?usp=sharing', '_blank')">
+                    <img src="Wedding.jpg" class="w-full h-full object-cover opacity-60 group-hover:scale-110 transition duration-500">
+                    <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition bg-black/60">
+                        <div class="text-center">
+                            <span class="text-white tracking-widest italic">Wedding Photo's</span>
+                            <span class="text-xs gold-accent mt-2 block">[ Click For More ]</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item foto group relative overflow-hidden bg-black aspect-square cursor-pointer" 
+                     onclick="window.open('https://drive.google.com/drive/folders/1UEwb-rv1ceQzU50R3AEq_zEXegkngNv3?usp=sharing', '_blank')">
+                    <img src="PreWedding.jpg" class="w-full h-full object-cover opacity-60 group-hover:scale-110 transition duration-500">
+                    <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition bg-black/60">
+                        <div class="text-center">
+                            <span class="text-white tracking-widest italic">Pre-Wedding Photo's</span>
+                            <span class="text-xs gold-accent mt-2 block">[ Click For More ]</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item foto group relative overflow-hidden bg-black aspect-square cursor-pointer" 
+                     onclick="window.open('https://drive.google.com/drive/folders/1kqlDn_xP1p2EsvkSEmz2McicBWT17sjK?usp=sharing', '_blank')">
+                    <img src="Model.jpg" class="w-full h-full object-cover opacity-60 group-hover:scale-110 transition duration-500">
+                    <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition bg-black/60">
+                        <div class="text-center">
+                            <span class="text-white tracking-widest italic block">Modelling Photo's</span>
+                            <span class="text-xs gold-accent mt-2 block">[ Click For More ]</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item foto group relative overflow-hidden bg-black aspect-square cursor-pointer" 
+                     onclick="window.open('https://drive.google.com/drive/folders/1MT4gdgOObphYXXyeRVtjyebfULU7YHsC?usp=sharing', '_blank')">
+                    <img src="Gradu.jpg" class="w-full h-full object-cover opacity-60 group-hover:scale-110 transition duration-500">
+                    <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition bg-black/60">
+                        <div class="text-center">
+                            <span class="text-white tracking-widest italic">Graduation's</span>
+                            <span class="text-xs gold-accent mt-2 block">[ Click For More ]</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item foto group relative overflow-hidden bg-black aspect-square cursor-pointer"
+                     onclick="window.open('https://drive.google.com/drive/folders/19w0BXGzoTPT9sibKIFLzBGqX1cgCjJHo', '_blank')">
+                    <img src="produk.jpg" class="w-full h-full object-cover opacity-60 group-hover:scale-110 transition duration-500">
+                    <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition bg-black/60">
+                        <div class="text-center">
+                            <span class="text-white tracking-widest italic">Photo Product</span>
+                            <span class="text-xs gold-accent mt-2 block">[ Click For More ]</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item foto group relative overflow-hidden bg-black aspect-square cursor-pointer"
+                     onclick="window.open('https://drive.google.com/drive/folders/15J4TNR5WlqbhmcYVYSgcM7PYqQrx_Vve?usp=sharing', '_blank')">
+                    <img src="Kamera.jpeg" class="w-full h-full object-cover opacity-60 group-hover:scale-110 transition duration-500">
+                    <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition bg-black/60">
+                        <div class="text-center">
+                            <span class="text-white tracking-widest italic">Another Photo's</span>
+                            <span class="text-xs gold-accent mt-2 block">[ Click For More ]</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item video group relative overflow-hidden bg-black aspect-video">
+                    <a href="https://youtu.be/UG2-deqCLhE" target="_blank">
+                        <img src="https://img.youtube.com/vi/UG2-deqCLhE/hqdefault.jpg" alt="Thumbnail Video" class="w-full h-full object-cover opacity-60 group-hover:opacity-100 transition duration-500">
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <div class="bg-white/10 p-4 rounded-full backdrop-blur-sm group-hover:bg-red-600 transition duration-300">
+                                <i class="fab fa-youtube text-4xl text-white"></i>
+                            </div>
+                        </div>
+                        <div class="absolute bottom-4 left-4 opacity-0 group-hover:opacity-100 transition duration-300">
+                            <span class="text-white text-xs tracking-widest uppercase bg-black/50 px-2 py-1">Play Video</span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="portfolio-item video group relative overflow-hidden bg-black aspect-video">
+                    <a href="https://youtu.be/HcHWMBjhRzo" target="_blank">
+                        <img src="https://img.youtube.com/vi/HcHWMBjhRzo/hqdefault.jpg" alt="Thumbnail Video" class="w-full h-full object-cover opacity-60 group-hover:opacity-100 transition duration-500">
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <div class="bg-white/10 p-4 rounded-full backdrop-blur-sm group-hover:bg-red-600 transition duration-300">
+                                <i class="fab fa-youtube text-4xl text-white"></i>
+                            </div>
+                        </div>
+                        <div class="absolute bottom-4 left-4 opacity-0 group-hover:opacity-100 transition duration-300">
+                            <span class="text-white text-xs tracking-widest uppercase bg-black/50 px-2 py-1">Play Video</span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="portfolio-item video group relative overflow-hidden bg-black aspect-video">
+                    <a href="https://youtu.be/wBOQVi4P9A8" target="_blank">
+                        <img src="https://img.youtube.com/vi/wBOQVi4P9A8/hqdefault.jpg" alt="Thumbnail Video" class="w-full h-full object-cover opacity-60 group-hover:opacity-100 transition duration-500">
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <div class="bg-white/10 p-4 rounded-full backdrop-blur-sm group-hover:bg-red-600 transition duration-300">
+                                <i class="fab fa-youtube text-4xl text-white"></i>
+                            </div>
+                        </div>
+                        <div class="absolute bottom-4 left-4 opacity-0 group-hover:opacity-100 transition duration-300">
+                            <span class="text-white text-xs tracking-widest uppercase bg-black/50 px-2 py-1">Play Video</span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="portfolio-item video group relative overflow-hidden bg-black aspect-video">
+                    <a href="https://youtu.be/lxuMp-Ihx7c" target="_blank">
+                        <img src="https://img.youtube.com/vi/lxuMp-Ihx7c/hqdefault.jpg" alt="Thumbnail Video" class="w-full h-full object-cover opacity-60 group-hover:opacity-100 transition duration-500">
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <div class="bg-white/10 p-4 rounded-full backdrop-blur-sm group-hover:bg-red-600 transition duration-300">
+                                <i class="fab fa-youtube text-4xl text-white"></i>
+                            </div>
+                        </div>
+                        <div class="absolute bottom-4 left-4 opacity-0 group-hover:opacity-100 transition duration-300">
+                            <span class="text-white text-xs tracking-widest uppercase bg-black/50 px-2 py-1">Play Video</span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="portfolio-item video group relative overflow-hidden bg-black aspect-video">
+                    <a href="https://youtu.be/t3JAlLPpFig" target="_blank">
+                        <img src="https://img.youtube.com/vi/t3JAlLPpFig/hqdefault.jpg" alt="Thumbnail Video" class="w-full h-full object-cover opacity-60 group-hover:opacity-100 transition duration-500">
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <div class="bg-white/10 p-4 rounded-full backdrop-blur-sm group-hover:bg-red-600 transition duration-300">
+                                <i class="fab fa-youtube text-4xl text-white"></i>
+                            </div>
+                        </div>
+                        <div class="absolute bottom-4 left-4 opacity-0 group-hover:opacity-100 transition duration-300">
+                            <span class="text-white text-xs tracking-widest uppercase bg-black/50 px-2 py-1">Play Video</span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="portfolio-item video group relative overflow-hidden bg-black aspect-video">
+                    <a href="https://youtu.be/iy7gAgi0nDk" target="_blank">
+                        <img src="https://img.youtube.com/vi/iy7gAgi0nDk/hqdefault.jpg" alt="Thumbnail Video" class="w-full h-full object-cover opacity-60 group-hover:opacity-100 transition duration-500">
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <div class="bg-white/10 p-4 rounded-full backdrop-blur-sm group-hover:bg-red-600 transition duration-300">
+                                <i class="fab fa-youtube text-4xl text-white"></i>
+                            </div>
+                        </div>
+                        <div class="absolute bottom-4 left-4 opacity-0 group-hover:opacity-100 transition duration-300">
+                            <span class="text-white text-xs tracking-widest uppercase bg-black/50 px-2 py-1">Play Video</span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="portfolio-item video group relative overflow-hidden bg-black aspect-video">
+                    <a href="https://youtu.be/z4CnBtSgg2w" target="_blank">
+                        <img src="https://img.youtube.com/vi/z4CnBtSgg2w/hqdefault.jpg" alt="Thumbnail Video" class="w-full h-full object-cover opacity-60 group-hover:opacity-100 transition duration-500">
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <div class="bg-white/10 p-4 rounded-full backdrop-blur-sm group-hover:bg-red-600 transition duration-300">
+                                <i class="fab fa-youtube text-4xl text-white"></i>
+                            </div>
+                        </div>
+                        <div class="absolute bottom-4 left-4 opacity-0 group-hover:opacity-100 transition duration-300">
+                            <span class="text-white text-xs tracking-widest uppercase bg-black/50 px-2 py-1">Play Video</span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="portfolio-item video group relative overflow-hidden bg-black aspect-video">
+                    <a href="https://youtu.be/QO5GO2V_K6U" target="_blank">
+                        <img src="https://img.youtube.com/vi/QO5GO2V_K6U/hqdefault.jpg" alt="Thumbnail Video" class="w-full h-full object-cover opacity-60 group-hover:opacity-100 transition duration-500">
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <div class="bg-white/10 p-4 rounded-full backdrop-blur-sm group-hover:bg-red-600 transition duration-300">
+                                <i class="fab fa-youtube text-4xl text-white"></i>
+                            </div>
+                        </div>
+                        <div class="absolute bottom-4 left-4 opacity-0 group-hover:opacity-100 transition duration-300">
+                            <span class="text-white text-xs tracking-widest uppercase bg-black/50 px-2 py-1">Play Video</span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="portfolio-item video group relative overflow-hidden bg-black aspect-video">
+                    <a href="https://youtu.be/lMka0Sab0lY" target="_blank">
+                        <img src="https://img.youtube.com/vi/lMka0Sab0lY/hqdefault.jpg" alt="Thumbnail Video" class="w-full h-full object-cover opacity-60 group-hover:opacity-100 transition duration-500">
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <div class="bg-white/10 p-4 rounded-full backdrop-blur-sm group-hover:bg-red-600 transition duration-300">
+                                <i class="fab fa-youtube text-4xl text-white"></i>
+                            </div>
+                        </div>
+                        <div class="absolute bottom-4 left-4 opacity-0 group-hover:opacity-100 transition duration-300">
+                            <span class="text-white text-xs tracking-widest uppercase bg-black/50 px-2 py-1">Play Video</span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="portfolio-item video group relative overflow-hidden bg-black aspect-video">
+                    <a href="https://youtu.be/lOaGzlOHs_k" target="_blank">
+                        <img src="https://img.youtube.com/vi/lOaGzlOHs_k/hqdefault.jpg" alt="Thumbnail Video" class="w-full h-full object-cover opacity-60 group-hover:opacity-100 transition duration-500">
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <div class="bg-white/10 p-4 rounded-full backdrop-blur-sm group-hover:bg-red-600 transition duration-300">
+                                <i class="fab fa-youtube text-4xl text-white"></i>
+                            </div>
+                        </div>
+                        <div class="absolute bottom-4 left-4 opacity-0 group-hover:opacity-100 transition duration-300">
+                            <span class="text-white text-xs tracking-widest uppercase bg-black/50 px-2 py-1">Play Video</span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="portfolio-item video group relative overflow-hidden bg-black aspect-video">
+                    <a href="https://youtu.be/dVzUtJBCuFk?si=D2iNpGyBuglqzw8w" target="_blank">
+                        <img src="Thumdesa.png" alt="Thumbnail Video" class="w-full h-full object-cover opacity-60 group-hover:opacity-100 transition duration-500">
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <div class="bg-white/10 p-4 rounded-full backdrop-blur-sm group-hover:bg-red-600 transition duration-300">
+                                <i class="fab fa-youtube text-4xl text-white"></i>
+                            </div>
+                        </div>
+                        <div class="absolute bottom-4 left-4 opacity-0 group-hover:opacity-100 transition duration-300">
+                            <span class="text-white text-xs tracking-widest uppercase bg-black/50 px-2 py-1">Play Video</span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="portfolio-item animation group relative overflow-hidden bg-black aspect-video">
+                    <a href="https://youtu.be/PD8GlUnu69I" target="_blank">
+                        <img src="https://img.youtube.com/vi/PD8GlUnu69I/hqdefault.jpg" alt="Thumbnail Video" class="w-full h-full object-cover opacity-60 group-hover:opacity-100 transition duration-500">
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <div class="bg-white/10 p-4 rounded-full backdrop-blur-sm group-hover:bg-red-600 transition duration-300">
+                                <i class="fab fa-youtube text-4xl text-white"></i>
+                            </div>
+                        </div>
+                        <div class="absolute bottom-4 left-4 opacity-0 group-hover:opacity-100 transition duration-300">
+                            <span class="text-white text-xs tracking-widest uppercase bg-black/50 px-2 py-1">Play Animation</span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="portfolio-item game bg-white/5 p-6 border border-white/10 rounded-lg cursor-pointer hover:border-gold transition" onclick="openProjectModal('planetopia')">
+                    <img src="Planetopia.png" class="mb-4 rounded w-full h-48 object-cover">
+                    <h3 class="text-xl gold-accent mb-2">Planetopia</h3>
+                    <p class="text-sm text-gray-400 line-clamp-2">Game petualangan antar galaksi dengan Augmented Reality...</p>
+                </div>
+
+                <div class="portfolio-item game bg-white/5 p-6 border border-white/10 rounded-lg cursor-pointer hover:border-gold transition" onclick="openProjectModal('nusaquest')">
+                    <img src="Nusa.png" class="mb-4 rounded w-full h-48 object-cover">
+                    <h3 class="text-xl gold-accent mb-2">Nusa Quest</h3>
+                    <p class="text-sm text-gray-400 line-clamp-2">Game petualangan nusantara yang memberikan ilmu negeri ini...</p>
+                </div>
+
+                <div class="portfolio-item game bg-white/5 p-6 border border-white/10 rounded-lg cursor-pointer hover:border-gold transition" onclick="openProjectModal('ruangrintis')">
+                    <img src="Rintis.png" class="mb-4 rounded w-full h-48 object-cover">
+                    <h3 class="text-xl gold-accent mb-2">Ruang Rintis</h3>
+                    <p class="text-sm text-gray-400 line-clamp-2">Aplikasi pembantu startup dengan bantuan mentor profesional...</p>
+                </div>
+
+                <div class="portfolio-item grafis bg-white/5 p-6 border border-white/10 rounded-lg cursor-pointer hover:border-gold transition" 
+                     onclick="openProjectModal('personalbrand')">
+                    <img src="des3.png" class="mb-4 rounded w-full h-48 object-cover">
+                    <h3 class="text-xl gold-accent mb-2">Logo Design</h3>
+                    <p class="text-sm text-gray-400 line-clamp-2">Eksplorasi visual dan perancangan identitas brand lengkap...</p>
+                </div>
+
+                <div class="portfolio-item grafis bg-white/5 p-6 border border-white/10 rounded-lg cursor-pointer hover:border-gold transition" 
+                     onclick="openProjectModal('packaging')">
+                    <img src="broar2.png" class="mb-4 rounded w-full h-48 object-cover">
+                    <h3 class="text-xl gold-accent mb-2">Leaflet Design</h3>
+                    <p class="text-sm text-gray-400 line-clamp-2">Konsep dan desain leaflet untuk sebuah promosi dan penyebaran informasi...</p>
+                </div>
+
+                <div class="portfolio-item grafis bg-white/5 p-6 border border-white/10 rounded-lg cursor-pointer hover:border-gold transition" 
+                     onclick="openProjectModal('socialmedia')">
+                    <img src="feed2.png" class="mb-4 rounded w-full h-48 object-cover">
+                    <h3 class="text-xl gold-accent mb-2">Social Media Feed</h3>
+                    <p class="text-sm text-gray-400 line-clamp-2">Perancangan layout konten digital feed instagram estetik dan interaktif...</p>
+                </div>
+
+                <div class="portfolio-item grafis bg-white/5 p-6 border border-white/10 rounded-lg cursor-pointer hover:border-gold transition" 
+                     onclick="openProjectModal('companyprofile')">
+                    <img src="anode1.png" class="mb-4 rounded w-full h-48 object-cover">
+                    <h3 class="text-xl gold-accent mb-2">Another Design</h3>
+                    <p class="text-sm text-gray-400 line-clamp-2">Desain lainya yang pernah dibuat...</p>
+                </div>
+
+                <div class="portfolio-item modelling bg-white/5 p-6 border border-white/10 rounded-lg cursor-pointer hover:border-gold transition" 
+                     onclick="openProjectModal('threedassets')">
+                    <img src="3d1.png" class="mb-4 rounded w-full h-48 object-cover">
+                    <h3 class="text-xl gold-accent mb-2">3D Asset Creation</h3>
+                    <p class="text-sm text-gray-400 line-clamp-2">Perancangan aset objek 3 dimensi, penataan material tekstur, serta visualisasi render untuk kebutuhan projek interaktif maupun animasi...</p>
+                </div>
+
+                <div class="portfolio-item modelling bg-white/5 p-6 border border-white/10 rounded-lg cursor-pointer hover:border-gold transition" 
+                     onclick="openProjectModal('threedanimation')">
+                    <div class="relative w-full h-48 bg-black/40 rounded mb-4 overflow-hidden flex items-center justify-center border border-white/5">
+                        <i class="fas fa-play text-4xl text-[#c5a059]/80 absolute z-10"></i>
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
+                        <span class="absolute bottom-2 right-2 bg-black/70 px-2 py-0.5 rounded text-[10px] uppercase tracking-widest text-gray-400">Video</span>
+                    </div>
+                    <h3 class="text-xl gold-accent mb-2">3D Animation</h3>
+                    <p class="text-sm text-gray-400 line-clamp-2">Kompilasi karya animasi 3D interaktif dinamis dengan pergerakan sinematik objek yang halus...</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-24 bg-[#0f0f0f] px-6">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-4xl mb-4">Mari <span class="gold-accent">Berkolaborasi</span></h2>
+            <p class="text-center text-gray-400 mb-12 max-w-lg mx-auto text-sm">
+                Punya ide luar biasa atau proyek yang ingin didiskusikan? Hubungi saya langsung melalui salah satu media sosial di bawah ini.
+            </p>
+            
+            <div class="flex flex-wrap justify-center gap-8 text-4xl md:text-5xl">
+                <a href="https://www.instagram.com/nabiel_gattan/" target="_blank" 
+                   class="p-4 rounded-xl bg-white/5 border border-white/10 text-gray-300 hover:text-[#c5a059] hover:border-gold hover:-translate-y-2 transition duration-300 shadow-lg flex items-center justify-center w-20 h-20">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://wa.me/6281282045808" target="_blank" 
+                   class="p-4 rounded-xl bg-white/5 border border-white/10 text-gray-300 hover:text-[#c5a059] hover:border-gold hover:-translate-y-2 transition duration-300 shadow-lg flex items-center justify-center w-20 h-20">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+                <a href="https://www.tiktok.com/@nblgttn" target="_blank" 
+                   class="p-4 rounded-xl bg-white/5 border border-white/10 text-gray-300 hover:text-[#c5a059] hover:border-gold hover:-translate-y-2 transition duration-300 shadow-lg flex items-center justify-center w-20 h-20">
+                    <i class="fab fa-tiktok"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <button id="backToTop" onclick="scrollToTop()" class="fixed bottom-6 right-6 bg-gold text-black w-10 h-10 rounded-full flex items-center justify-center shadow-lg opacity-0 pointer-events-none transition-all duration-300 z-50 hover:bg-[#b08e4f]">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <div id="myModal" class="modal items-center justify-center p-6" onclick="closeModal()">
+        <span class="absolute top-10 right-10 text-white text-4xl cursor-pointer">&times;</span>
+        <img id="img01" class="max-w-full max-h-full rounded shadow-2xl">
+    </div>
+
+    <div id="projectModal" class="modal items-center justify-center p-4 z-[100]">
+        <div class="bg-[#1a1a1a] max-w-3xl w-full rounded-2xl overflow-hidden relative border border-white/10 shadow-2xl">
+            <button onclick="closeProjectModal()" class="absolute top-4 right-4 z-50 text-white/50 hover:text-white text-2xl">&times;</button>
+            <div class="flex flex-col md:flex-row">
+                <div class="md:w-1/2 relative bg-black flex items-center justify-center h-[400px] md:h-[530px] p-6">
+                    <img id="carouselImg" src="" class="max-w-full max-h-full object-contain rounded-lg">
+                    
+                    <video id="modalVideo" class="max-w-full max-h-full rounded-lg hidden" controls></video>
+
+                    <button id="prevBtn" onclick="changeSlide(-1)" class="absolute left-2 top-1/2 -translate-y-1/2 bg-black/50 p-2 rounded-full hover:bg-gold hover:text-black transition">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button id="nextBtn" onclick="changeSlide(1)" class="absolute right-2 top-1/2 -translate-y-1/2 bg-black/50 p-2 rounded-full hover:bg-gold hover:text-black transition">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+                <div class="md:w-1/2 p-8 flex flex-col justify-center">
+                    <h2 id="projectTitle" class="text-3xl gold-accent mb-4 font-bold"></h2>
+                    <div class="h-1 w-12 bg-gold mb-6"></div>
+                    <p id="projectDesc" class="text-gray-300 leading-relaxed text-sm"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="carouselModal" class="fixed inset-0 z-[999] bg-black/95 hidden items-center justify-center p-4">
+        <button onclick="closeCarousel()" class="absolute top-5 right-8 text-white text-4xl z-50">&times;</button>
+        <button onclick="changeCarouselSlide(-1)" class="absolute left-5 text-white text-3xl p-4 hover:text-gold transition z-50">
+            <i class="fas fa-chevron-left"></i>
+        </button>
+        <div class="max-w-xl w-full max-h-[85vh] flex flex-col items-center bg-[#151515] p-6 rounded-2xl border border-white/10 shadow-2xl relative mx-auto">
+            <img id="carouselDisplay" src="" class="max-w-full max-h-[65vh] object-contain rounded-lg shadow-2xl">
+            <div id="carouselCounter" class="mt-4 text-white/50 tracking-widest text-sm"></div>
+        </div>
+        <button onclick="changeCarouselSlide(1)" class="absolute right-5 text-white text-3xl p-4 hover:text-gold transition z-50">
+            <i class="fas fa-chevron-right"></i>
+        </button>
+    </div>
+
+    <footer class="py-12 border-t border-white/10 text-center text-gray-500 text-sm">
+        <p>&copy; 2026 Nabiel Gattan. Dibuat dengan dedikasi.</p>
+    </footer>
+
+    <script>
+        function filterSelection(c, btn) {
+            var x, i;
+            x = document.getElementsByClassName("portfolio-item");
+            if (c == "all") c = "";
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+                if (x[i].className.indexOf(c) > -1) {
+                    x[i].style.display = "block";
+                }
+            }
+            if (btn) {
+                var buttons = document.getElementsByClassName("filter-btn");
+                for (i = 0; i < buttons.length; i++) {
+                    buttons[i].classList.remove("border-gold", "text-gold");
+                    buttons[i].classList.add("border-white/20", "text-gray-400");
+                }
+                btn.classList.add("border-gold", "text-gold");
+                btn.classList.remove("border-white/20", "text-gray-400");
+            }
+        }
+
+        function openModal(imgSrc) {
+            const modal = document.getElementById("myModal");
+            modal.style.setProperty('display', 'flex', 'important');
+            document.getElementById("img01").src = imgSrc;
+        }
+
+        function closeModal() {
+            document.getElementById("myModal").style.setProperty('display', 'none', 'important');
+        }
+
+        filterSelection('all');
+
+        // DATABASE DATA PROYEK (SUDAH DITAMBAHKAN THREEDANIMATION DENGAN MEDIA VIDEO LOKAL)
+        const projectData = {
+            planetopia: {
+                title: "Planetopia",
+                desc: "Game petualangan antar galaksi dengan Augmented Reality yang memudahkan kita untuk melihat lebih detail texture dari setiap planet yang ada secara interaktif melalui perangkat mobile.",
+                images: ["Plan1.jpg", "Plan2.jpg", "Plan3.png"]
+            },
+            nusaquest: {
+                title: "Nusa Quest",
+                desc: "Game petualangan nusantara yang dirancang untuk mengenalkan kebudayaan dan kekayaan alam Indonesia kepada generasi muda melalui misi-misi yang edukatif.",
+                images: ["Nusa1.jpg", "Nusa2.jpg", "Nusa3.jpeg"]
+            },
+            ruangrintis: {
+                title: "Ruang Rintis",
+                desc: "Aplikasi ekosistem startup yang menghubungkan pengusaha muda dengan mentor berpengalaman. Fitur mencakup modul belajar, jadwal mentoring, dan forum diskusi.",
+                images: ["Rintis1.png", "Rintis2.png", "Rintis3.png"]
+            },
+            personalbrand: {
+                title: "Logo Design",
+                desc: "Eksplorasi visual dan perancangan identitas brand mulai dari pembuatan logo asli, pemilihan palet warna yang representatif, hingga penerapan aset grafis yang konsisten pada berbagai jenis media digital.",
+                images: ["logo1.png", "logo2.png", "logo3.png", "logo4.png", "logo6.png", "logo5.png"]
+            },
+            packaging: {
+                title: "Leaflet Design",
+                desc: "Pengembangan konsep pemasaran suatu produk menggunakan selebaran atau leaflet yang dapat digunakan untuk pemasaran suatu produk atau sebagai alat pemberi informasi yang digunakan dalam beberapa event tertentu.",
+                images: ["broar1.png", "broar2.png", "brodim1.JPG", "brodim2.JPG"]
+            },
+            socialmedia: {
+                title: "Social Media Feed",
+                desc: "Sistem template dan tata letak visual berkala untuk platform digital, memastikan performa branding bisnis di media sosial tetap rapi, interaktif, dinamis, dan memikat audiens sasaran.",
+                images: ["feed1.png", "feed2.png", "feed3.png", "feed4.png", "feed5.png", "feed6.jpg", "feed7.png", "feed8.png"]
+            },
+            companyprofile: {
+                title: "Desain Lainya",
+                desc: "Penyusunan desain sesuai dengan kebutuhan konsumen.",
+                images: ["anode1.png", "anode2.png", "anode3.jpeg", "anode4.jpg"]
+            },
+            threedassets: {
+                title: "3D Asset Creation",
+                desc: "Perancangan aset objek 3 dimensi, penataan material tekstur, serta visualisasi render untuk kebutuhan projek interaktif maupun animasi.",
+                images: ["3d1.png", "3d2.png", "3d3.png", "3d4.png", "3d5.png", "3d6.png"]
+            },
+            threedanimation: {
+                title: "3D Animation",
+                desc: "Kompilasi karya animasi 3D interaktif dinamis dengan pergerakan sinematik objek yang halus untuk menciptakan sebuah cerita fiksi berkesan visual tinggi.",
+                mediaType: "video",
+                videoSrc: "3dvid.mkv"
+            }
+        }  
+
+        let currentProject = "";
+        let currentSlideIndex = 0;
+
+        function openProjectModal(projectId) {
+            const data = projectData[projectId];
+            currentProject = projectId;
+            currentSlideIndex = 0;
+
+            document.getElementById('projectTitle').innerText = data.title;
+            document.getElementById('projectDesc').innerText = data.desc;
+            
+            const imgEl = document.getElementById('carouselImg');
+            const videoEl = document.getElementById('modalVideo');
+            const prevBtn = document.getElementById('prevBtn');
+            const nextBtn = document.getElementById('nextBtn');
+
+            // Cek jika proyek bertipe video lokal
+            if (data.mediaType === "video") {
+                imgEl.classList.add('hidden');
+                prevBtn.classList.add('hidden');
+                nextBtn.classList.add('hidden');
+                
+                videoEl.src = data.videoSrc;
+                videoEl.classList.remove('hidden');
+                videoEl.play(); // Auto-play video saat terbuka
+            } else {
+                videoEl.classList.add('hidden');
+                videoEl.pause();
+                videoEl.src = "";
+                
+                imgEl.src = data.images[0];
+                imgEl.classList.remove('hidden');
+                
+                // Tampilkan tombol navigasi jika gambarnya lebih dari 1
+                if (data.images.length > 1) {
+                    prevBtn.classList.remove('hidden');
+                    nextBtn.classList.remove('hidden');
+                } else {
+                    prevBtn.classList.add('hidden');
+                    nextBtn.classList.add('hidden');
+                }
+            }
+            
+            const pModal = document.getElementById('projectModal');
+            pModal.style.setProperty('display', 'flex', 'important');
+        }
+
+        function closeProjectModal() {
+            const pModal = document.getElementById('projectModal');
+            pModal.style.setProperty('display', 'none', 'important');
+            
+            // Menghentikan video saat pop-up ditutup agar tidak mengalirkan suara
+            const videoEl = document.getElementById('modalVideo');
+            videoEl.pause();
+            videoEl.src = "";
+        }
+
+        function changeSlide(direction) {
+            const project = projectData[currentProject];
+            if (project.mediaType === "video") return;
+
+            const images = project.images;
+            currentSlideIndex += direction;
+            if (currentSlideIndex >= images.length) currentSlideIndex = 0;
+            if (currentSlideIndex < 0) currentSlideIndex = images.length - 1;
+            document.getElementById('carouselImg').src = images[currentSlideIndex];
+        }
+
+        let currentImages = [];
+        let currentIndex = 0;
+
+        function openCarousel(imageArray) {
+            currentImages = imageArray;
+            currentIndex = 0;
+            updateCarousel();
+            document.getElementById('carouselModal').style.display = "flex";
+            document.body.style.overflow = 'hidden';
+        }
+
+        function updateCarousel() {
+            const imgElement = document.getElementById('carouselDisplay');
+            const counter = document.getElementById('carouselCounter');
+            imgElement.src = currentImages[currentIndex];
+            counter.innerText = (currentIndex + 1) + " / " + currentImages.length;
+        }
+
+        function changeCarouselSlide(direction) {
+            currentIndex += direction;
+            if (currentIndex >= currentImages.length) currentIndex = 0;
+            if (currentIndex < 0) currentIndex = currentImages.length - 1;
+            updateCarousel();
+        }
+
+        function closeCarousel() {
+            document.getElementById('carouselModal').style.display = "none";
+            document.body.style.overflow = 'auto';
+        }
+
+        // BACK TO TOP & ACTIVE NAVIGATION SCRIPT
+        const backToTopBtn = document.getElementById("backToTop");
+        const sections = document.querySelectorAll("section");
+        const navLinks = document.querySelectorAll(".nav-link");
+
+        window.onscroll = function() {
+            if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
+                backToTopBtn.classList.remove("opacity-0", "pointer-events-none");
+            } else {
+                backToTopBtn.classList.add("opacity-0", "pointer-events-none");
+            }
+
+            let current = "";
+            sections.forEach((section) => {
+                const sectionTop = section.offsetTop;
+                if (window.pageYOffset >= sectionTop - 150) {
+                    current = section.getAttribute("id");
+                }
+            });
+
+            navLinks.forEach((link) => {
+                link.classList.remove("active");
+                if (link.getAttribute("href").includes(current)) {
+                    link.classList.add("active");
+                }
+            });
+        };
+
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        window.onclick = function(event) {
+            const pModal = document.getElementById('projectModal');
+            const myModal = document.getElementById('myModal');
+            if (event.target == pModal) {
+                closeProjectModal();
+            }
+            if (event.target == myModal) {
+                closeModal();
+            }
+        }
+    </script>
+</body>
+</html>
